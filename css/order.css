@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+.column {
+   float: left;
+   width: 8%;
+   padding: 10px;
+   height: 55px;
+   vertical-align: middle;
+   text-align: left;
+ 
+}
+.category-img img{
+    width: 50px;
+    height: 41px;
+    margin-left: 8px;
+ 
+}
+.cat, .check-price { width: 8%; }
+
+.check-name { width: 60%; }
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+/* The Orders container */
+.orders_container {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  width: 100%; 
+  font-size: 20px;
+}
+.smaller_container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;   
+}
+.ord_id, .value {
+    display: inline;
+}
+.value {padding-left: 100px; float: right;}
+/* Clear floats after the columns */
+.smaller_container:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.orders_column {
+   float: left;
+   padding: 10px 0px 5px;
+   width: 100%;
+      
+}
+.row-order { margin: 0px 0px 15px; }
+.col1 {
+    width: 90%;
+ 
+}
+.btn-status {
+    display: inline; 
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+}
+.btn-sts {
+    text-align: center;
+    padding : 2px;
+    width: 150px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius:3px;
+    border: 0;
+    font-size: 20px;
+    float: right;
+    margin: 25px 10px 15px;
+}
+.btn-sts a { color: #fff; }
+.btn-sts:hover  {
+    background-color: rgba(52, 152, 219, 0.8);
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.btn-paypal { width: 400px; float: right; }
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
